@@ -7,6 +7,7 @@
 import React, { FC, useEffect,Fragment } from 'react';
 // import Loading from '../Loading/Loading';
 import './Home.css';
+import Header from '../../components/Header/Header';
 
 
 interface HomeProps {
@@ -30,7 +31,8 @@ const Home : FC<HomeProps> = () =>{
   return (
     <Fragment>
       <div className="Home container bordered">
-lol      
+<Header/>
+
 </div>
    
     </Fragment>
