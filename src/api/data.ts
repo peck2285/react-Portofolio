@@ -1,5 +1,26 @@
 import { Portfolio } from "../models/Portfolio"
 import { Skill } from "../models/Skill"
+import { Slider } from "../models/Slider"
+
+export const sliders : Slider[] = [
+    {
+        name : "Alex Gbagbo franklin Zadi",
+        description : "developpeur web Junior FullStack",
+        imgSrc : "assets/images/bcg1.jpg"
+    },
+
+     {
+        name : "Zadi Gbagbo",
+        description : "La meilleure manière d'apprendre et de connaître le succès est de ne jamais considérer l'échec comme une défaite.",
+        imgSrc : "assets/images/bcg2 (1).jpg"
+    },
+
+     {
+        name : "Zadi Gbagbo",
+        description : "La meilleure manière d'apprendre et de connaître le succès est de ne jamais considérer l'échec comme une défaite.",
+        imgSrc : "assets/images/bcg3.jpg"
+    }
+]
 
 
 export const skills : Skill[] = [
@@ -49,6 +70,8 @@ export const skills : Skill[] = [
    
 
 ]
+
+
 
 export const portofolios : Portfolio[] =[
     {
