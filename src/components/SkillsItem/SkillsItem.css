@@ -5,4 +5,9 @@
   Created At : 01/06/2024 21:20:28
 */
 
-.SkillsItem {}
+.SkillsItem {
+  padding: 5rem;
+  text-align: center;
+  border: var(--border);
+  cursor: pointer;
+}
