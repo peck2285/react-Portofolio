@@ -4,7 +4,7 @@
   App Name : E-commerce with React.Js
   Created At : 01/06/2024 21:06:33
 */
-import React, { FC, useEffect,Fragment, useState } from 'react';
+import React, { FC, useEffect,Fragment } from 'react';
 // import Loading from '../Loading/Loading';
 import './Home.css';
 
@@ -18,28 +18,21 @@ const Home : FC<HomeProps> = () =>{
 
 
     // const [state, setState] = useState<any>(null)
-    const [loading, setLoading] = useState(true);
-    const [value, setValue] = useState('');
 
     useEffect(() => {
       window.scrollTo(0,0)
       const runLocalData = async () => {
 
-        setLoading(false)
       }
       runLocalData()
-    },[value])
+    },[])
 
   return (
     <Fragment>
-    {
-      loading ?
-      <Loading />
-      :
-      <div className="Home">
-          Home Component
-      </div>
-    }
+      <div className="Home container ">
+lol      
+</div>
+   
     </Fragment>
   );
 }
