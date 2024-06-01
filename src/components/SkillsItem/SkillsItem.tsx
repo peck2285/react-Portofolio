@@ -6,29 +6,33 @@
 */
 import React, { FC, useEffect } from 'react';
 import './SkillsItem.css';
+import { Skill } from '../../models/Skill';
 
 
 interface SkillsItemProps {
- 
+  skill: Skill
+
 }
 
 
-const SkillsItem : FC<SkillsItemProps> = () =>{
+const SkillsItem: FC<SkillsItemProps> = ({ skill }) => {
 
 
 
-    useEffect(() => {
-      window.scrollTo(0,0)
-      const runLocalData = async () => {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+    const runLocalData = async () => {
 
-      }
-      runLocalData()
-    })
+    }
+    runLocalData()
+  })
 
   return (
-      <div className="SkillsItem">
-          SkillsItem Component
-      </div>
+    <div className="SkillsItem">
+      <img src={skill.imgUrl} alt="maquette creation site e-commerce"/>
+        <h3>{skill.name.toUpperCase()}</h3>
+        <p>{skill.status}</p>
+    </div>
   );
 }
 

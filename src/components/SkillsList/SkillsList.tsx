@@ -6,6 +6,9 @@
 */
 import React, { FC, useEffect } from 'react';
 import './SkillsList.css';
+import { skills } from '../../api/data';
+import { Skill } from '../../models/Skill';
+import SkillsItem from '../SkillsItem/SkillsItem';
 
 
 interface SkillsListProps {
@@ -27,7 +30,11 @@ const SkillsList : FC<SkillsListProps> = () =>{
 
   return (
       <div className="SkillsList">
-          SkillsList Component
+          {
+            skills.map((skill : Skill, index : number)=>{
+              return <SkillsItem key={index} skill={skill}/>
+            })
+          }
       </div>
   );
 }
