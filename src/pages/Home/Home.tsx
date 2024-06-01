@@ -29,7 +29,7 @@ const Home : FC<HomeProps> = () =>{
 
   return (
     <Fragment>
-      <div className="Home container ">
+      <div className="Home container bordered">
 lol      
 </div>
    

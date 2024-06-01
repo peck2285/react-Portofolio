@@ -6,6 +6,7 @@
 */
 import React, { FC, useEffect } from 'react';
 import './Hero.css';
+import Slider from '../Slider/Slider';
 
 
 interface HeroProps {
@@ -27,7 +28,8 @@ const Hero : FC<HeroProps> = () =>{
 
   return (
       <div className="Hero">
-          Hero Component
+        
+          <Slider/>
       </div>
   );
 }
